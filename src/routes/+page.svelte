@@ -1,6 +1,9 @@
 <script lang='ts'>
   import { type RESTPostAPIChannelMessageResult } from 'discord-api-types/v10';
   import { onMount } from 'svelte';
+  import { sound } from "svelte-sound";
+  import click_mp4 from "../assets/click.mp3";
+
   let discordData: RESTPostAPIChannelMessageResult[] = [];
 
   async function fetchMessages() {
@@ -29,3 +32,7 @@
 {:else}
   <p>No messages found</p>
 {/if}
+
+<button use:sound={{src: click_mp4, events: ["click"]}}>
+  Click Me!!
+</button>

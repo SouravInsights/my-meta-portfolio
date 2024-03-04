@@ -33,6 +33,7 @@
 	"dependencies": {
 		"@discordjs/rest": "^2.2.0",
 		"discord-api-types": "^0.37.71",
-		"dotenv": "^16.4.5"
+		"dotenv": "^16.4.5",
+		"svelte-sound": "^0.6.0"
 	}
 }
