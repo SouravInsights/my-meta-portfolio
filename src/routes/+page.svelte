@@ -13,13 +13,12 @@
             throw new Error('Failed to fetch messages from Discord');
         }
         const data = await response.json();
-        console.log(data.messages);
         discordData = data.messages;
     } catch (error) {
         console.error(error);
     }
   }
-
+  
   onMount(fetchMessages); // Call fetchMessagesFromDiscord on component mount
 </script>
 
